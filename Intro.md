@@ -121,40 +121,6 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 
 <img width="600" src="./assets/problems/454.4-sum-ii.png">
 
-## 传送门
-
-### leetcode 经典题目的解析
-
-> 这里仅列举具有**代表性题目**，并不是全部题目
-
-- [简单难度](./collections/easy.md)
-- [中等难度](./collections/medium.md)
-- [困难难度](./collections/hard.md)
-
-### 数据结构与算法的总结
-
-- [数据结构](./thinkings/basic-data-structure.md)
-- [基础算法](./thinkings/basic-algorithm.md)
-- [二叉树的遍历](./thinkings/binary-tree-traversal.md) 🖊
-- [动态规划](./thinkings/dynamic-programming.md) 🖊
-- [哈夫曼编码和游程编码](./thinkings/run-length-encode-and-huffman-encode.md)
-- [布隆过滤器](./thinkings/bloom-filter.md)
-- [字符串问题](./thinkings/string-problems.md)
-- [前缀树专题](./thinkings/trie.md) 🖊
-- [《日程安排》专题](https://lucifer.ren/blog/2020/02/03/leetcode-%E6%88%91%E7%9A%84%E6%97%A5%E7%A8%8B%E5%AE%89%E6%8E%92%E8%A1%A8%E7%B3%BB%E5%88%97/)
-- [《构造二叉树》专题](https://lucifer.ren/blog/2020/02/08/%E6%9E%84%E9%80%A0%E4%BA%8C%E5%8F%89%E6%A0%91%E4%B8%93%E9%A2%98/)
-- [《贪婪策略》专题](./thinkings/greedy.md)
-- [《深度优先遍历》专题](./thinkings/DFS.md)
-- [滑动窗口（思路 + 模板）](./thinkings/slide-window.md)
-- [位运算](./thinkings/bit.md)
-- [设计题](./thinkings/design.md)
-- [小岛问题](./thinkings/island.md)
-- [最大公约数](./thinkings/GCD.md)
-- [并查集](./thinkings/union-find.md) 🆕
-- [前缀和](./thinkings/prefix.md) 🆕
-- [字典序列删除](https://lucifer.ren/blog/2020/06/13/%E5%88%A0%E9%99%A4%E9%97%AE%E9%A2%98/)🆕
-- [平衡二叉树专题](./thinkings/balanced-tree.md)
-
 ### anki 卡片
 
 Anki 主要分为两个部分：一部分是关键点到题目的映射，另一部分是题目到思路，关键点，代码的映射。
@@ -214,6 +180,7 @@ anki - 文件 - 导入 - 下拉格式选择“打包的 anki 集合”，然后�
 我经常会在开源社区进行一些输出和分享，比较受欢迎的有 [宇宙最强的前端面试指南](https://github.com/azl397985856/fe-interview)
 和 [我的第一本小书](https://github.com/azl397985856/automate-everything)。目前本人正在写一本关于《leetcode 题解》的实体书，感兴趣的可以通过邮箱或者微信联系我，我会在出版的第一时间通知你，并给出首发优惠价。有需要可以直接群里联系我，或者发送到我的个人邮箱 [azl397985856@gmail.com]。 新书详情戳这里：[《或许是一本可以彻底改变你刷 LeetCode 效率的题解书》](https://lucifer.ren/blog/2020/04/07/leetcode-book.intro/)
 
+
 ## 贡献
 
 - 如果有想法和创意，请提 [issue](https://github.com/azl397985856/leetcode/issues) 或者进群提
@@ -224,20 +191,6 @@ anki - 文件 - 导入 - 下拉格式选择“打包的 anki 集合”，然后�
 ## 鸣谢
 
 感谢为这个项目作出贡献的所有 [小伙伴](https://github.com/azl397985856/leetcode/graphs/contributors)
-
-## 赞助
-
-### 微信
-
-<img width="300" src="./assets/donate-weixin.jpg">
-
-### 支付宝
-
-<img width="300" src="./assets/donate-zfb.jpg">
-
-### 捐赠
-
-[点击查看完整的捐赠列表](./donation.md)
 
 ## License
 
