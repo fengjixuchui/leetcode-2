@@ -10,9 +10,10 @@
     * [哈夫曼编码和游程编码](thinkings/run-length-encode-and-huffman-encode.md)
     * [布隆过滤器](thinkings/bloom-filter.md)
     * [字符串问题](thinkings/string-problems.md)
-    * [前缀树专题](thinkings/trie.md)
-    * [《贪婪策略》专题](thinkings/greedy.md)
-    * [《深度优先遍历》专题](thinkings/DFS.md)
+    * [前缀树](thinkings/trie.md)
+    * [贪婪策略](thinkings/greedy.md)
+    * [深度优先遍历](thinkings/DFS.md)
+    * [回溯](thinkings/backtrack.md)
     * [滑动窗口（思路 + 模板）](thinkings/slide-window.md)
     * [位运算](thinkings/bit.md)
     * [设计题](thinkings/design.md)
@@ -20,6 +21,7 @@
     * [最大公约数](thinkings/GCD.md)
     * [并查集](thinkings/union-find.md)
     * [平衡二叉树专题](thinkings/balanced-tree.md)
+    * [单调栈](thinkings/monotone-stack.md)
 
 
 * [第二章 - 91 天学算法](./91/README.md)
@@ -163,9 +165,11 @@
     * [0560. 和为K的子数组](problems/560.subarray-sum-equals-k.md)
     * [0609. 在系统中查找重复文件](problems/609.find-duplicate-file-in-system.md)
     * [0611. 有效三角形的个数](problems/611.valid-triangle-number.md)
+    * [0686. 重复叠加字符串匹配](problems/686.repeated-string-match.md)
     * [0718. 最长重复子数组](problems/718.maximum-length-of-repeated-subarray.md)
     * [0754. 到达终点数字](problems/754.reach-a-number.md)
     * [0785. 判断二分图](problems/785.is-graph-bipartite.md)
+    * [0816. 模糊坐标](problems/816.ambiguous-coordinates.md)
     * [0820. 单词的压缩编码](problems/820.short-encoding-of-words.md)
     * [0875. 爱吃香蕉的珂珂](problems/875.koko-eating-bananas.md)
     * [0877. 石子游戏](problems/877.stone-game.md)
@@ -173,6 +177,7 @@
     * [0900. RLE 迭代器](problems/900.rle-iterator.md)
     * [0912. 排序数组](problems/912.sort-an-array.md)
     * [0935. 骑士拨号器](problems/935.knight-dialer.md)
+    * [0978. 最长湍流子数组](problems/978.longest-turbulent-subarray.md)
     * [1011. 在 D 天内送达包裹的能力](problems/1011.capacity-to-ship-packages-within-d-days.md)
     * [1014. 最佳观光组合](problems/1014.best-sightseeing-pair.md)
     * [1015. 可被 K 整除的最小整数](problems/1015.smallest-integer-divisible-by-k.md)
@@ -191,6 +196,8 @@
     * [1310. 子数组异或查询](problems/1310.xor-queries-of-a-subarray.md)
     * [1334. 阈值距离内邻居最少的城市](problems/1334.find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.md)
     * [1371.每个元音包含偶数次的最长子字符串](problems/1371.find-the-longest-substring-containing-vowels-in-even-counts.md)
+    * [1558. 得到目标数组的最少函数调用次数](../problems/1558.minimum-numbers-of-function-calls-to-make-target-array.md)
+    * [1631. 最小体力消耗路径](problems/1631.path-with-minimum-effort.md)
 
 
 * [第六章 - 高频考题（困难）](collections/hard.md)
@@ -205,6 +212,7 @@
     * [0085. 最大矩形](problems/85.maximal-rectangle.md)
     * [0124. 二叉树中的最大路径和](problems/124.binary-tree-maximum-path-sum.md)
     * [0128. 最长连续序列](problems/128.longest-consecutive-sequence.md)
+    * [0140. 单词拆分 II](problems/140.word-break-ii.md)
     * [0145. 二叉树的后序遍历](problems/145.binary-tree-postorder-traversal.md)
     * [0212. 单词搜索 II](problems/212.word-search-ii.md)
     * [0239. 滑动窗口最大值](problems/239.sliding-window-maximum.md)
@@ -220,6 +228,7 @@
     * [0895. 最大频率栈](problems/895.maximum-frequency-stack.md)
     * [1032. 字符流](problems/1032.stream-of-characters.md)
     * [1168. 水资源分配优化](problems/1168.optimize-water-distribution-in-a-village.md)
+    * [1255. 得分最高的单词集合](problems/1255.maximum-score-words-formed-by-letters.md)
     * [1449. 数位成本和为目标值的最大数字](problems/1449.form-largest-integer-with-digits-that-add-up-to-target.md)
     
 
