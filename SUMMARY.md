@@ -31,10 +31,7 @@
 
 
 * [第三章 - 精选题解](./selected/README.md)
-    * [《日程安排》专题](./selected/schedule-topic.md)
-    * [《构造二叉树》专题](./selected/construct-binary-tree.md)
     * [字典序列删除](./selected/a-deleted.md)
-    * [百度的算法面试题 * 祖玛游戏](./selected/zuma-game.md)
     * [西法的刷题秘籍】一次搞定前缀和](./selected/atMostK.md)
     * [字节跳动的算法面试题是什么难度？](./selected/byte-dance-algo-ex.md)
     * [字节跳动的算法面试题是什么难度？（第二弹）](./selected/byte-dance-algo-ex-2017.md)
@@ -45,7 +42,7 @@
     * [一文看懂《最大子序列和问题》](./selected/LSS.md)
 
 
-* [第四章 - 高频考题（简单）](collections/easy.md)
+* [第四章 - 高频考题（简单 70 题）](collections/easy.md)
     * [面试题 17.12. BiNode](problems/binode-lcci.md)
     * [0001. 两数之和](problems/1.two-sum.md)
     * [0020. 有效的括号](problems/20.valid-parentheses.md)
@@ -85,7 +82,7 @@
     * [1332. 删除回文子序列](problems/1332.remove-palindromic-subsequences.md)
 
 
-* [第五章 - 高频考题（中等）](collections/medium.md)
+* [第五章 - 高频考题（中等 112 题）](collections/medium.md)
     * [0002. 两数相加](problems/2.add-two-numbers.md)
     * [0003. 无重复字符的最长子串](problems/3.longest-substring-without-repeating-characters.md)
     * [0005. 最长回文子串](problems/5.longest-palindromic-substring.md)
@@ -200,7 +197,7 @@
     * [1631. 最小体力消耗路径](problems/1631.path-with-minimum-effort.md)
 
 
-* [第六章 - 高频考题（困难）](collections/hard.md)
+* [第六章 - 高频考题（困难 30 题）](collections/hard.md)
     * [0004. 寻找两个正序数组的中位数](problems/4.median-of-two-sorted-arrays.md)
     * [0023. 合并K个升序链表](problems/23.merge-k-sorted-lists.md)
     * [0025. K 个一组翻转链表](problems/25.reverse-nodes-in-k-groups.md)
@@ -208,6 +205,7 @@
     * [0032. 最长有效括号](problems/32.longest-valid-parentheses.md)
     * [0042. 接雨水](problems/42.trapping-rain-water.md)
     * [0052. N皇后 II](problems/52.N-Queens-II.md)
+    * [0057. 插入区间](problems/57.insert-interval.md)
     * [0084. 柱状图中最大的矩形](problems/84.largest-rectangle-in-histogram.md)
     * [0085. 最大矩形](problems/85.maximal-rectangle.md)
     * [0124. 二叉树中的最大路径和](problems/124.binary-tree-maximum-path-sum.md)
