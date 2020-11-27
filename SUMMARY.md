@@ -5,6 +5,8 @@
 
 * [第一章 - 算法专题](thinkings/README.md)
     * [数据结构](thinkings/basic-data-structure.md)
+    * [链表专题](thinkings/linked-list.md)
+    * [树专题](thinkings/tree.md)
     * [二叉树的遍历](thinkings/binary-tree-traversal.md)
     * [动态规划](thinkings/dynamic-programming.md)
     * [哈夫曼编码和游程编码](thinkings/run-length-encode-and-huffman-encode.md)
@@ -42,13 +44,15 @@
     * [一文看懂《最大子序列和问题》](./selected/LSS.md)
 
 
-* [第四章 - 高频考题（简单 70 题）](collections/easy.md)
+* [第四章 - 高频考题（简单 73 题）](collections/easy.md)
     * [面试题 17.12. BiNode](problems/binode-lcci.md)
     * [0001. 两数之和](problems/1.two-sum.md)
     * [0020. 有效的括号](problems/20.valid-parentheses.md)
     * [0021. 合并两个有序链表](problems/21.merge-two-sorted-lists.md)
     * [0026. 删除排序数组中的重复项](problems/26.remove-duplicates-from-sorted-array.md)
     * [0053. 最大子序和](problems/53.maximum-sum-subarray-cn.md)
+    * [0160. 相交链表](problems/160.Intersection-of-Two-Linked-Lists.md) 91
+    * [0066. 加一](problems/66.plus-one.md) 91
     * [0088. 合并两个有序数组](problems/88.merge-sorted-array.md)
     * [0101. 对称二叉树](problems/101.symmetric-tree.md)
     * [0104. 二叉树的最大深度](problems/104.maximum-depth-of-binary-tree.md)
@@ -68,7 +72,7 @@
     * [0206. 反转链表](problems/206.reverse-linked-list.md)
     * [0219. 存在重复元素 II](problems/219.contains-duplicate-ii.md)
     * [0226. 翻转二叉树](problems/226.invert-binary-tree.md)
-    * [0232. 用栈实现队列](problems/232.implement-queue-using-stacks.md)
+    * [0232. 用栈实现队列](problems/232.implement-queue-using-stacks.md) 91
     * [0263. 丑数](problems/263.ugly-number.md)
     * [0283. 移动零](problems/283.move-zeroes.md)
     * [0342. 4的幂](problems/342.power-of-four.md)
@@ -77,12 +81,13 @@
     * [0437. 路径总和 III](problems/437.path-sum-iii.md)
     * [0455. 分发饼干](problems/455.AssignCookies.md)
     * [0575. 分糖果](problems/575.distribute-candies.md)
+    * [821. 字符的最短距离](problems/821.shortest-distance-to-a-character.md) 91
     * [0874. 模拟行走机器人](problems/874.walking-robot-simulation.md)
     * [1260. 二维网格迁移](problems/1260.shift-2d-grid.md)
     * [1332. 删除回文子序列](problems/1332.remove-palindromic-subsequences.md)
 
 
-* [第五章 - 高频考题（中等 112 题）](collections/medium.md)
+* [第五章 - 高频考题（中等 118 题）](collections/medium.md)
     * [0002. 两数相加](problems/2.add-two-numbers.md)
     * [0003. 无重复字符的最长子串](problems/3.longest-substring-without-repeating-characters.md)
     * [0005. 最长回文子串](problems/5.longest-palindromic-substring.md)
@@ -105,6 +110,7 @@
     * [0055. 跳跃游戏](problems/55.jump-game.md)
     * [0056. 合并区间](problems/56.merge-intervals.md)
     * [0060. 第k个排列](problems/60.permutation-sequence.md)
+    * [0061. 旋转链表](../problems/61.Rotate-List.md) 91
     * [0062. 不同路径](problems/62.unique-paths.md)
     * [0073. 矩阵置零](problems/73.set-matrix-zeroes.md)
     * [0075. 颜色分类](problems/75.sort-colors.md)
@@ -127,6 +133,7 @@
     * [0131. 分割回文串](problems/131.palindrome-partitioning.md)
     * [0139. 单词拆分](problems/139.word-break.md)
     * [0144. 二叉树的前序遍历](problems/144.binary-tree-preorder-traversal.md)
+    * [0147. 对链表进行插入排序](../problems/147.insertion-sort-list.md)
     * [0150. 逆波兰表达式求值](problems/150.evaluate-reverse-polish-notation.md)
     * [0152. 乘积最大子数组](problems/152.maximum-product-subarray.md)
     * [0199. 二叉树的右视图](problems/199.binary-tree-right-side-view.md)
@@ -152,10 +159,12 @@
     * [0365. 水壶问题](problems/365.water-and-jug-problem.md)
     * [0378. 有序矩阵中第K小的元素](problems/378.kth-smallest-element-in-a-sorted-matrix.md)
     * [0380. 常数时间插入、删除和获取随机元素](problems/380.insert-delete-getrandom-o1.md)
+    * [0394. 字符串解码](problems/394.decode-string.md) 91
     * [0416. 分割等和子集](problems/416.partition-equal-subset-sum.md)
     * [0445. 两数相加 II](problems/445.add-two-numbers-ii.md)
     * [0454. 四数相加 II](problems/454.4-sum-ii.md)
     * [0494. 目标和](problems/494.target-sum.md)
+    * [0513. 找树左下角的值](problems/513.find-bottom-left-tree-value.md) 91
     * [0516. 最长回文子序列](problems/516.longest-palindromic-subsequence.md)
     * [0518. 零钱兑换 II](problems/518.coin-change-2.md)
     * [0547. 朋友圈](problems/547.friend-circles.md)
@@ -175,6 +184,7 @@
     * [0912. 排序数组](problems/912.sort-an-array.md)
     * [0935. 骑士拨号器](problems/935.knight-dialer.md)
     * [0978. 最长湍流子数组](problems/978.longest-turbulent-subarray.md)
+    * [0987. 二叉树的垂序遍历](problems/987.vertical-order-traversal-of-a-binary-tree.md) 91
     * [1011. 在 D 天内送达包裹的能力](problems/1011.capacity-to-ship-packages-within-d-days.md)
     * [1014. 最佳观光组合](problems/1014.best-sightseeing-pair.md)
     * [1015. 可被 K 整除的最小整数](problems/1015.smallest-integer-divisible-by-k.md)
@@ -193,11 +203,12 @@
     * [1310. 子数组异或查询](problems/1310.xor-queries-of-a-subarray.md)
     * [1334. 阈值距离内邻居最少的城市](problems/1334.find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.md)
     * [1371.每个元音包含偶数次的最长子字符串](problems/1371.find-the-longest-substring-containing-vowels-in-even-counts.md)
+    * [1381. 设计一个支持增量操作的栈](../problems/1381.design-a-stack-with-increment-operation.md) 91
     * [1558. 得到目标数组的最少函数调用次数](../problems/1558.minimum-numbers-of-function-calls-to-make-target-array.md)
     * [1631. 最小体力消耗路径](problems/1631.path-with-minimum-effort.md)
 
 
-* [第六章 - 高频考题（困难 30 题）](collections/hard.md)
+* [第六章 - 高频考题（困难 32 题）](collections/hard.md)
     * [0004. 寻找两个正序数组的中位数](problems/4.median-of-two-sorted-arrays.md)
     * [0023. 合并K个升序链表](problems/23.merge-k-sorted-lists.md)
     * [0025. K 个一组翻转链表](problems/25.reverse-nodes-in-k-groups.md)
@@ -215,6 +226,7 @@
     * [0212. 单词搜索 II](problems/212.word-search-ii.md)
     * [0239. 滑动窗口最大值](problems/239.sliding-window-maximum.md)
     * [0295. 数据流的中位数](problems/295.find-median-from-data-stream.md)
+    * [0297. 二叉树的序列化与反序列化](problems/297.serialize-and-deserialize-binary-tree.md) 91
     * [0301. 删除无效的括号](problems/301.remove-invalid-parentheses.md)
     * [0312. 戳气球](problems/312.burst-balloons.md)
     * [0335. 路径交叉](problems/335.self-crossing.md)
@@ -222,6 +234,7 @@
     * [0472. 连接词](problems/472.concatenated-words.md)
     * [0488. 祖玛游戏](problems/488.zuma-game.md)
     * [0493. 翻转对](problems/493.reverse-pairs.md)
+    * [0768. 最多能完成排序的块 II](../problems/768.max-chunks-to-make-sorted-ii.md) 91
     * [0887. 鸡蛋掉落](problems/887.super-egg-drop.md)
     * [0895. 最大频率栈](problems/895.maximum-frequency-stack.md)
     * [1032. 字符流](problems/1032.stream-of-characters.md)

@@ -4,7 +4,7 @@
 
 这部分的题目要不需要我们挖掘题目的内含信息， 将其抽象成简单题目。 要么是一些写起来比较麻烦的题目， 一些人编码能力不行就挂了。因此大家一定要自己做， 即使看了题解”会了“，也要自己码一遍。自己不亲自写一遍，里面的细节永远不知道。
 
-以下是我列举的经典题目：
+以下是我列举的经典题目（带 91 字样的表示出自 **91 天学算法**活动）：
 
 - [面试题 17.09. 第 k 个数](../../problems/get-kth-magic-number-lcci.md)
 
@@ -30,6 +30,7 @@
 - [0055. 跳跃游戏](../problems/55.jump-game.md)
 - [0056. 合并区间](../problems/56.merge-intervals.md)
 - [0060. 第 k 个排列](../problems/60.permutation-sequence.md)
+- [0061. 旋转链表](../problems/61.Rotate-List.md) 91
 - [0062. 不同路径](../problems/62.unique-paths.md)
 - [0073. 矩阵置零](../problems/73.set-matrix-zeroes.md)
 - [0075. 颜色分类](../problems/75.sort-colors.md)
@@ -52,6 +53,7 @@
 - [0131. 分割回文串](../problems/131.palindrome-partitioning.md)
 - [0139. 单词拆分](../problems/139.word-break.md)
 - [0144. 二叉树的前序遍历](../problems/144.binary-tree-preorder-traversal.md)
+- [0147. 对链表进行插入排序](../problems/147.insertion-sort-list.md) 🆕
 - [0150. 逆波兰表达式求值](../problems/150.evaluate-reverse-polish-notation.md)
 - [0152. 乘积最大子数组](../problems/152.maximum-product-subarray.md)
 - [0199. 二叉树的右视图](../problems/199.binary-tree-right-side-view.md)
@@ -77,11 +79,13 @@
 - [0365. 水壶问题](../problems/365.water-and-jug-problem.md)
 - [0378. 有序矩阵中第 K 小的元素](../problems/378.kth-smallest-element-in-a-sorted-matrix.md)
 - [0380. 常数时间插入、删除和获取随机元素](../problems/380.insert-delete-getrandom-o1.md)
+- [0394. 字符串解码](../problems/394.decode-string.md) 91
 - [0416. 分割等和子集](../problems/416.partition-equal-subset-sum.md)
 - [0445. 两数相加 II](../problems/445.add-two-numbers-ii.md)
 - [0454. 四数相加 II](../problems/454.4-sum-ii.md)
 - [0494. 目标和](../problems/494.target-sum.md)
 - [0516. 最长回文子序列](../problems/516.longest-palindromic-subsequence.md)
+- [0513. 找树左下角的值](../problems/513.find-bottom-left-tree-value.md) 91
 - [0518. 零钱兑换 II](../problems/518.coin-change-2.md)
 - [0547. 朋友圈](../problems/547.friend-circles.md)
 - [0560. 和为 K 的子数组](../problems/560.subarray-sum-equals-k.md)
@@ -100,6 +104,7 @@
 - [0912. 排序数组](../problems/912.sort-an-array.md)
 - [0935. 骑士拨号器](../problems/935.knight-dialer.md)
 - [0978. 最长湍流子数组](../problems/978.longest-turbulent-subarray.md) 🆕
+- [0987. 二叉树的垂序遍历](../problems/987.vertical-order-traversal-of-a-binary-tree.md) 91
 - [1011. 在 D 天内送达包裹的能力](../problems/1011.capacity-to-ship-packages-within-d-days.md)
 - [1014. 最佳观光组合](../problems/1014.best-sightseeing-pair.md)
 - [1015. 可被 K 整除的最小整数](../problems/1015.smallest-integer-divisible-by-k.md)
@@ -118,5 +123,6 @@
 - [1310. 子数组异或查询](../problems/1310.xor-queries-of-a-subarray.md)
 - [1334. 阈值距离内邻居最少的城市](../problems/1334.find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.md)
 - [1371.每个元音包含偶数次的最长子字符串](../problems/1371.find-the-longest-substring-containing-vowels-in-even-counts.md)
+- [1381. 设计一个支持增量操作的栈](../problems/1381.design-a-stack-with-increment-operation.md) 91
 - [1558. 得到目标数组的最少函数调用次数](../problems/1558.minimum-numbers-of-function-calls-to-make-target-array.md) 🆕
 - [1631.path-with-minimum-effort](../problems/1631.path-with-minimum-effort.md) 🆕
