@@ -33,6 +33,8 @@
 
 这是我将我的所有公开的算法资料整理的一个电子书，全部题目信息中文化，以前会有一些英文描述，感谢 @CYL 的中文整理。
 
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gm3r7y4dt8j30zx0u0hdt.jpg)
+
 **限时免费下载！后期随时可能收费**
 
 有些动图，在做成电子书（比如 pdf）的时候自然就变没了，如果需要看动图的， 可以去我的公众号《力扣加加》或者我的 leetcode 题解仓库看。
@@ -126,15 +128,16 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 
 目前更新了 200 多道题解，加上专题涉及的题目，差不多有 **300 道**。
 
-- [高频考题（简单 73 题）](./collections/easy.md)
-- [高频考题（中等 118 题）](./collections/medium.md)
-- [高频考题（困难 32 题）](./collections/hard.md)
+- [高频考题合集（简单难度）](./collections/easy.md)
+- [高频考题合集（中等难度）](./collections/medium.md)
+- [高频考题合集（困难难度）](./collections/hard.md)
 
 ### 数据结构与算法的总结(22 篇)
 
 - [数据结构总览](./thinkings/basic-data-structure.md)
 - [链表专题](./thinkings/linked-list.md) 🆕
 - [树专题](./thinkings/tree.md) 🆕
+- [堆专题（上）](./thinkings/heap.md) 🆕
 <!-- - [基础算法](./thinkings/basic-algorithm.md) -->
 - [二叉树的遍历](./thinkings/binary-tree-traversal.md)
 - [动态规划](./thinkings/dynamic-programming.md)
@@ -233,20 +236,6 @@ anki - 文件 - 导入 - 下拉格式选择“打包的 anki 集合”，然后�
 ## :love_letter:鸣谢
 
 感谢为这个项目作出贡献的所有 [小伙伴](https://github.com/azl397985856/leetcode/graphs/contributors)
-
-## :moneybag: &nbsp;赞助
-
-### 微信
-
-<img width="300" src="./assets/donate-weixin.jpg">
-
-### 支付宝
-
-<img width="300" src="./assets/donate-zfb.jpg">
-
-### 捐赠
-
-[点击查看完整的捐赠列表](./donation.md)
 
 ## License
 
