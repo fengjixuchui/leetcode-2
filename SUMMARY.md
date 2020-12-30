@@ -79,6 +79,7 @@
     * [0342. 4的幂](problems/342.power-of-four.md)
     * [0349. 两个数组的交集](problems/349.intersection-of-two-arrays.md)
     * [0371. 两整数之和](problems/371.sum-of-two-integers.md)
+    * [401. 二进制手表](problems/401.binary-watch.md)
     * [0437. 路径总和 III](problems/437.path-sum-iii.md)
     * [0455. 分发饼干](problems/455.AssignCookies.md)
     * [0575. 分糖果](problems/575.distribute-candies.md)
@@ -236,6 +237,7 @@
     * [0297. 二叉树的序列化与反序列化](problems/297.serialize-and-deserialize-binary-tree.md) 91
     * [0301. 删除无效的括号](problems/301.remove-invalid-parentheses.md)
     * [0312. 戳气球](problems/312.burst-balloons.md)
+    * [330. 按要求补齐数组](problems/330.patching-array.md) 🆕
     * [0335. 路径交叉](problems/335.self-crossing.md)
     * [0460. LFU缓存](problems/460.lfu-cache.md)
     * [0472. 连接词](problems/472.concatenated-words.md)
