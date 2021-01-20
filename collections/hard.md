@@ -50,11 +50,14 @@
 - [0472. 连接词](../problems/472.concatenated-words.md)
 - [0488. 祖玛游戏](../problems/488.zuma-game.md)
 - [0493. 翻转对](../problems/493.reverse-pairs.md)
+- [0715. Range 模块](../problems/715.range-module.md) 🆕
 - [0768. 最多能完成排序的块 II](../problems/768.max-chunks-to-make-sorted-ii.md) 91
 - [0887. 鸡蛋掉落](../problems/887.super-egg-drop.md)
 - [0895. 最大频率栈](../problems/895.maximum-frequency-stack.md)
+- [0975. 奇偶跳](../problems/975.odd-even-jump.md) 🆕
 - [1032. 字符流](../problems/1032.stream-of-characters.md)
 - [1168. 水资源分配优化](../problems/1168.optimize-water-distribution-in-a-village.md)
+- [1203. 项目管理](../problems/1203.sort-items-by-groups-respecting-dependencies.md) 🆕
 - [1255. 得分最高的单词集合](../problems/1255.maximum-score-words-formed-by-letters.md)
 - [1345. 跳跃游戏 IV](../problems/1435.jump-game-iv.md)
 - [1449. 数位成本和为目标值的最大数字](../problems/1449.form-largest-integer-with-digits-that-add-up-to-target.md) 🆕

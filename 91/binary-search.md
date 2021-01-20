@@ -157,10 +157,24 @@ function binarySearch(nums, target) {
 
 ##### C++
 
-暂时空缺，欢迎 [PR](https://github.com/leetcode-pp/leetcode-cheat/pulls)
-
 ```cpp
+int binarySearch(vector<int>& nums, int target){
+  if(nums.size() == 0)
+    return -1;
 
+  int left = 0, right = nums.size() - 1;
+  while(left <= right){
+    int mid = left + ((right - left) >> 1);
+    if(nums[mid] == target){ return mid; }
+    // 搜索区间变为 [mid+1, right]
+    else if(nums[mid] < target)
+	left = mid + 1;
+    // 搜索区间变为 [left, mid - 1]
+    else
+	right = mid - 1;
+  }
+  return -1;
+}
 ```
 
 ### 寻找最左边的满足条件的值
@@ -258,10 +272,30 @@ function binarySearchLeft(nums, target) {
 
 ##### C++
 
-暂时空缺，欢迎 [PR](https://github.com/leetcode-pp/leetcode-cheat/pulls)
-
 ```cpp
-
+int binarySearchLeft(vector<int>& nums, int target) {
+	// 搜索区间为 [left, right]
+    int left = 0, right = nums.size() - 1;
+    while (left <= right) {
+        int mid = left + ((right - left) >> 1);
+        if (nums[mid] == target) {
+            // 收缩右边界
+            right = mid - 1;
+        }
+        if (nums[mid] < target) {
+            // 搜索区间变为 [mid+1, right]
+            left = mid + 1;
+        }
+        if (nums[mid] > target) {
+            // 搜索区间变为 [left, mid-1]
+            right = mid - 1;
+        }
+    }
+    // 检查是否越界
+    if (left >= nums.size() || nums[left] != target)
+        return -1;
+    return left;
+}
 ```
 
 ### 寻找最右边的满足条件的值
@@ -366,10 +400,30 @@ function binarySearchRight(nums, target) {
 
 ##### C++
 
-暂时空缺，欢迎 [PR](https://github.com/leetcode-pp/leetcode-cheat/pulls)
-
 ```cpp
-
+int binarySearchRight(vector<int>& nums, int target) {
+	// 搜索区间为 [left, right]
+    int left = 0, right = nums.size() - 1;
+    while (left <= right) {
+        int mid = left + ((right - left) >> 1);
+         if (nums[mid] == target) {
+            // 收缩左边界
+            left = mid + 1;
+        }
+        if (nums[mid] < target) {
+			// 搜索区间变为 [mid+1, right]
+            left = mid + 1;
+        }
+        if (nums[mid] > target) {
+			// 搜索区间变为 [left, mid-1]
+            right = mid - 1;
+        }
+    }
+    // 检查是否越界
+    if (right < 0 || nums[right] != target)
+        return -1;
+    return right;
+}
 ```
 
 ### 寻找最左插入位置
@@ -380,30 +434,21 @@ function binarySearchRight(nums, target) {
 
 另外如果有多个满足条件的值，我们返回最左侧的。 比如一个数组 nums: [1,2,2,2,3,4]，target 是 2，我们应该插入的位置是 1。
 
-不管是寻找最左插入位置还是后面的寻找最右插入位置，我们的更新指针代码都是一样的。即：
-
-```
-l = mid + 1
-# or
-r = mid
-```
-
-当然也有别的方式（比如 mid 不是向下取整，而是向上取整）， 但是这样可以最小化记忆成本。
-
 #### 思维框架
+
+如果你将**寻找最左插入位置**看成是**寻找最左满足**大于等于 x 的值，那就可以和前面的知识产生联系，使得代码更加统一。唯一的区别点在于**前面是最左满足等于 x**，这里是**最左满足大于等于 x**。
+
+具体算法：
 
 - 首先定义搜索区间为 [left, right]，注意是左右都闭合，之后会用到这个点。
 
 > 你可以定义别的搜索区间形式，不过后面的代码也相应要调整，感兴趣的可以试试别的搜索区间。
 
-- 由于我们定义的搜索区间为 [left, right]，因此当 left <= right 的时候，搜索区间都不为空。 但由于上面提到了更新条件有一个`r = mid`，因此如果结束条件是 left <= right 则会死循环。因此结束条件是 left < right。
+- 由于我们定义的搜索区间为 [left, right]，因此当 left <= right 的时候，搜索区间都不为空。 也就是说我们的终止搜索条件为 left <= right。
 
-> 有的人有疑问，这样设置结束条件会不会漏过正确的解，其实不会。举个例子容易明白一点。 比如对于区间 [4,4]，其包含了一个元素 4，搜索区间不为空。如果我们的答案恰好是 4，会被错过么？不会，因为我们直接返回了 4。
-
-- 循环体内，我们不断计算 mid ，并将 nums[mid] 与 目标值比对。
-  - 如果 nums[mid] 大于等于目标值， r 也可能是目标解，r - 1 可能会错过解，因此我们使用 r = mid。
-  - 如果 nums[mid] 小于目标值， mid 以及 mid 左侧都不可能是解，因此我们使用 l = mid + 1。
-- 最后直接返回 l 或者 r 即可。（并且不需要像`最左满足条件的值`那样判断了）
+- 当 A[mid] >= x，说明找到一个备胎，我们令 r = mid - 1 将 mid 从搜索区间排除，继续看看有没有更好的备胎。
+- 当 A[mid] < x，说明 mid 根本就不是答案，直接更新 l = mid + 1，从而将 mid 从搜索区间排除。
+- 最后搜索区间的 l 就是最好的备胎，备胎转正。
 
 #### 代码模板
 
@@ -414,14 +459,11 @@ def bisect_left(nums, x):
     # 内置 api
     bisect.bisect_left(nums, x)
     # 手写
-    l, r = 0, len(nums) - 1
-    while l < r:
+    l, r = 0, len(A) - 1
+    while l <= r:
         mid = (l + r) // 2
-        if nums[mid] < x:
-            l = mid + 1
-        else:
-            r = mid
-    # 由于 l 和 r 相等，因此返回谁都无所谓。
+        if A[mid] >= x: r = mid - 1
+        else: l = mid + 1
     return l
 ```
 
@@ -431,20 +473,19 @@ def bisect_left(nums, x):
 
 #### 思维框架
 
-和`寻找最左插入位置`类似。不同的地方在于：如果有多个满足条件的值，我们返回最右侧的。 比如一个数组 nums: [1,2,2,2,3,4]，target 是 2，我们应该插入的位置是 4。
+如果你将**寻找最右插入位置**看成是**寻找最右满足**大于 x 的值，那就可以和前面的知识产生联系，使得代码更加统一。唯一的区别点在于**前面是最左满足等于 x**，这里是**最左满足大于 x**。
+
+具体算法：
 
 - 首先定义搜索区间为 [left, right]，注意是左右都闭合，之后会用到这个点。
 
 > 你可以定义别的搜索区间形式，不过后面的代码也相应要调整，感兴趣的可以试试别的搜索区间。
 
-- 由于我们定义的搜索区间为 [left, right]，因此当 left <= right 的时候，搜索区间都不为空。 但由于上面提到了更新条件有一个`r = mid`，因此如果结束条件是 left <= right 则会死循环。因此结束条件是 left < right。
+- 由于我们定义的搜索区间为 [left, right]，因此当 left <= right 的时候，搜索区间都不为空。 也就是说我们的终止搜索条件为 left <= right。
 
-> 有的人有疑问，这样设置结束条件会不会漏过正确的解，其实不会。举个例子容易明白一点。 比如对于区间 [4,4]，其包含了一个元素 4，搜索区间不为空。如果我们的答案恰好是 4，会被错过么？不会，因为我们直接返回了 4。
-
-- 循环体内，我们不断计算 mid ，并将 nums[mid] 与 目标值比对。
-  - 如果 nums[mid] 小于等于目标值， mid 以及 mid 左侧都不可能是解，因此我们使用 l = mid + 1。
-  - 如果 nums[mid] 大于目标值， r 也可能是目标解，r - 1 可能会错过解，因此我们使用 r = mid。
-- 最后直接返回 l 或者 r 即可。（并且不需要像`最左满足条件的值`那样判断了）
+- 当 A[mid] > x，说明找到一个备胎，我们令 r = mid - 1 将 mid 从搜索区间排除，继续看看有没有更好的备胎。
+- 当 A[mid] <= x，说明 mid 根本就不是答案，直接更新 l = mid + 1，从而将 mid 从搜索区间排除。
+- 最后搜索区间的 l 就是最好的备胎，备胎转正。
 
 #### 代码模板
 
@@ -456,14 +497,11 @@ def bisect_right(nums, x):
     # 内置 api
     bisect.bisect_right(nums, x)
     # 手写
-    l, r = 0, len(nums) - 1
-    while l < r:
+    l, r = 0, len(A) - 1
+    while l <= r:
         mid = (l + r) // 2
-        if nums[mid] > x:
-            r = mid
-        else:
-            l = mid + 1
-    # 由于 l 和 r 相等，因此返回谁都无所谓。
+        if A[mid] <= x: l = mid + 1
+        else: r = mid - 1
     return l
 ```
 
@@ -513,16 +551,14 @@ LeetCode 有原题 [33. 搜索旋转排序数组](https://leetcode-cn.com/proble
 
 - 我们可以先找出 mid，然后根据 mid 来判断，mid 是在有序的部分还是无序的部分
 
-假如 mid 小于 start，则 mid 一定在右边有序部分。
-假如 mid 大于 start，则 mid 一定在左边有序部分。
+假如 mid 小于 start，则 mid 一定在右边有序部分，即 [mid,end] 部分有序。假如 mid 大于 start，则 mid 一定在左边有序部分，即 [start,mid]部分有序。**这是这类题目的突破口。**
 
 > 注意我没有考虑等号，之后我会讲。
 
-- 然后我们继续判断 target 在哪一部分， 我们就可以舍弃另一部分了
+- 然后我们继续判断 target 在哪一部分， 就可以舍弃另一部分了。
 
-我们只需要比较 target 和有序部分的边界关系就行了。 比如 mid 在右侧有序部分，即[mid, end]
-那么我们只需要判断 target >= mid && target <= end 就能知道 target 在右侧有序部分，我们就
-可以舍弃左边部分了(start = mid + 1)， 反之亦然。
+也就是说只需要比较 target 和**有序部分**的边界关系就行了。 比如 mid 在右侧有序部分，即[mid,end] 有序。那么我们只需要判断 target >= mid && target <= end 就能知道 target 在右侧有序部分，我们就
+可以舍弃左边部分了(通过 start = mid + 1 实现)， 反之亦然。
 
 我们以([6,7,8,1,2,3,4,5], 4)为例讲解一下：
 
@@ -530,7 +566,7 @@ LeetCode 有原题 [33. 搜索旋转排序数组](https://leetcode-cn.com/proble
 
 ![](https://tva1.sinaimg.cn/large/007S8ZIlly1gh9ahoznqjj30gx0i2wgb.jpg)
 
-接下来，我们考虑重复元素的问题。就会发生 nums[mid] == nums[start] 了，比如 30333 。这个时候，可以选择 l 右移一位。有的同学会担心”会不会错失目标元素？“。其实这个担心是多余的，前面我们已经介绍了”搜索区间“。由于搜索区间同时包含 l 和 mid ，因此去除一个 l ，我们还有 mid。假如 3 是我们要找的元素， 这样进行下去绝对不会错过，而是收缩”搜索区间“到一个元素 3 ，我们就可以心安理得地返回 3 了。
+接下来，我们考虑重复元素的问题。如果存在重复数字，就可能会发生 nums[mid] == nums[start] 了，比如 30333 。这个时候可以选择舍弃 start，也就是 start 右移一位。有的同学会担心”会不会错失目标元素？“。其实这个担心是多余的，前面我们已经介绍了”搜索区间“。由于搜索区间同时包含 start 和 mid ，因此去除一个 start ，我们还有 mid。假如 3 是我们要找的元素， 这样进行下去绝对不会错过，而是收缩”搜索区间“到一个元素 3 ，我们就可以心安理得地返回 3 了。
 
 ##### 代码（Python）
 
@@ -566,6 +602,44 @@ class Solution:
 
 - 时间复杂度：$$O(log N)$$
 - 空间复杂度：$$O(1)$$
+
+##### 扩展
+
+如果题目不是让你返回 true 和 false，而是返回最左/最右等于 targrt 的索引呢？这不就又和前面的知识建立联系了么？比如我让你在一个旋转数组中找最左等于 target 的索引，其实就是 [面试题 10.03. 搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)。
+
+思路和前面的最左满足类似，仍然是通过压缩区间，更新备胎，最后返回备胎的方式来实现。 具体看代码吧。
+
+Python Code:
+
+```py
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            mid = l + (r - l) // 2
+            # # the first half is ordered
+            if nums[l] < nums[mid]:
+                # target is in the first half
+                if nums[l] <= target <= nums[mid]:
+                    r = mid - 1
+                else:
+                    l = mid + 1
+            # # the second half is ordered
+            elif nums[l] > nums[mid]:
+                # target is in the second half
+                if nums[l] <= target or target <= nums[mid]:
+                    r = mid - 1
+                else:
+                    l = mid + 1
+            elif nums[l] == nums[mid]:
+                if nums[l] != target:
+                    l += 1
+                else:
+                    # l 是一个备胎
+                    r = l - 1
+        return l if l < len(nums) and nums[l] == target else -1
+
+```
 
 ### 二维数组
 

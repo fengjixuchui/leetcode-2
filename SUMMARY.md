@@ -24,6 +24,7 @@
     * [最大公约数](thinkings/GCD.md)
     * [并查集](thinkings/union-find.md)
     * [平衡二叉树专题](thinkings/balanced-tree.md)
+    * [蓄水池抽样](thinkings/reservoid-sampling.md) 🆕
     * [单调栈](thinkings/monotone-stack.md)
 
 
@@ -185,8 +186,10 @@
     * [0877. 石子游戏](problems/877.stone-game.md)
     * [0886. 可能的二分法](problems/886.possible-bipartition.md)
     * [0900. RLE 迭代器](problems/900.rle-iterator.md)
+    * [0911. 在线选举](../problems/911.online-election.md) 🆕
     * [0912. 排序数组](problems/912.sort-an-array.md)
     * [0935. 骑士拨号器](problems/935.knight-dialer.md)
+    * [0947. 移除最多的同行或同列石头](./problems/947.most-stones-removed-with-same-row-or-column.md) 🆕
     * [0978. 最长湍流子数组](problems/978.longest-turbulent-subarray.md)
     * [0987. 二叉树的垂序遍历](problems/987.vertical-order-traversal-of-a-binary-tree.md) 91
     * [1011. 在 D 天内送达包裹的能力](problems/1011.capacity-to-ship-packages-within-d-days.md)
@@ -241,17 +244,22 @@
     * [0335. 路径交叉](problems/335.self-crossing.md)
     * [0460. LFU缓存](problems/460.lfu-cache.md)
     * [0472. 连接词](problems/472.concatenated-words.md)
+    * [0483. 最小好进制](./problems/483.smallest-good-base.md) 🆕
     * [0488. 祖玛游戏](problems/488.zuma-game.md)
     * [0493. 翻转对](problems/493.reverse-pairs.md)
+    * [0715. Range 模块](../problems/715.range-module.md) 🆕
     * [0768. 最多能完成排序的块 II](problems/768.max-chunks-to-make-sorted-ii.md) 91
     * [0887. 鸡蛋掉落](problems/887.super-egg-drop.md)
     * [0895. 最大频率栈](problems/895.maximum-frequency-stack.md)
+    * [0975. 奇偶跳](../problems/975.odd-even-jump.md) 🆕
     * [1032. 字符流](problems/1032.stream-of-characters.md)
     * [1168. 水资源分配优化](problems/1168.optimize-water-distribution-in-a-village.md)
+    * [1203. 项目管理](../problems/1203.sort-items-by-groups-respecting-dependencies.md) 🆕
     * [1255. 得分最高的单词集合](problems/1255.maximum-score-words-formed-by-letters.md)
     * [1345. 跳跃游戏 IV](problems/1435.jump-game-iv.md) 🆕
     * [1449. 数位成本和为目标值的最大数字](problems/1449.form-largest-integer-with-digits-that-add-up-to-target.md)
-    * [5640. 与数组中元素的最大异或值](problems/5640.maximum-xor-with-an-element-from-array.md) 🆕
+    * [1649. 通过指令创建有序数组](./problems/1649.create-sorted-array-through-instructions.md) 🆕
+    * [1707. 与数组中元素的最大异或值](./problems/5640.maximum-xor-with-an-element-from-array.md) 🆕
     
 
 * [后序](epilogue.md)
