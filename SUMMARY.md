@@ -176,6 +176,7 @@
     * [0560. 和为K的子数组](problems/560.subarray-sum-equals-k.md)
     * [0609. 在系统中查找重复文件](problems/609.find-duplicate-file-in-system.md)
     * [0611. 有效三角形的个数](problems/611.valid-triangle-number.md)
+    * [0673. 最长递增子序列的个数](./problems/673.number-of-longest-increasing-subsequence.md) 🆕
     * [0686. 重复叠加字符串匹配](problems/686.repeated-string-match.md)
     * [0718. 最长重复子数组](problems/718.maximum-length-of-repeated-subarray.md)
     * [0754. 到达终点数字](problems/754.reach-a-number.md)
@@ -257,7 +258,9 @@
     * [1203. 项目管理](../problems/1203.sort-items-by-groups-respecting-dependencies.md) 🆕
     * [1255. 得分最高的单词集合](problems/1255.maximum-score-words-formed-by-letters.md)
     * [1345. 跳跃游戏 IV](problems/1435.jump-game-iv.md) 🆕
-    * [1449. 数位成本和为目标值的最大数字](problems/1449.form-largest-integer-with-digits-that-add-up-to-target.md)
+    * [1449. 数位成本和为目标值的最大数字](problems/1449.form-largest-integer-with-digits-that-add-up-to-target.md) 🆕
+    * [1521. 找到最接近目标值的函数值](./problems/1521.find-a-value-of-a-mysterious-function-closest-to-target.md) 🆕
+    * [1526. 形成目标数组的子数组最少增加次数](./problems/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.md) 🆕
     * [1649. 通过指令创建有序数组](./problems/1649.create-sorted-array-through-instructions.md) 🆕
     * [1707. 与数组中元素的最大异或值](./problems/5640.maximum-xor-with-an-element-from-array.md) 🆕
     
