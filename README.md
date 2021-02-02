@@ -127,7 +127,8 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [数据结构总览](./thinkings/basic-data-structure.md)
 - [链表专题](./thinkings/linked-list.md) 🆕
 - [树专题](./thinkings/tree.md) 🆕
-- [堆专题（上）](./thinkings/heap.md) 🆕
+- [堆专题（上）](./thinkings/heap.md)
+- [堆专题（下）](./thinkings/heap-2.md) 🆕
 <!-- - [基础算法](./thinkings/basic-algorithm.md) -->
 - [二叉树的遍历](./thinkings/binary-tree-traversal.md)
 - [动态规划](./thinkings/dynamic-programming.md)
@@ -215,6 +216,7 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [0575. 分糖果](./problems/575.distribute-candies.md)
 - [821. 字符的最短距离](./problems/821.shortest-distance-to-a-character.md) 91
 - [0874. 模拟行走机器人](./problems/874.walking-robot-simulation.md)
+- [1128. 等价多米诺骨牌对的数量](./problems/1128.number-of-equivalent-domino-pairs.md) 🆕
 - [1260. 二维网格迁移](./problems/1260.shift-2d-grid.md)
 - [1332. 删除回文子序列](./problems/1332.remove-palindromic-subsequences.md)
 
@@ -306,6 +308,7 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [0380. 常数时间插入、删除和获取随机元素](./problems/380.insert-delete-getrandom-o1.md)
 - [0394. 字符串解码](./problems/394.decode-string.md) 91
 - [0416. 分割等和子集](./problems/416.partition-equal-subset-sum.md)
+- [0424. 替换后的最长重复字符](./problems/424.longest-repeating-character-replacement.md) 🆕
 - [0445. 两数相加 II](./problems/445.add-two-numbers-ii.md)
 - [0454. 四数相加 II](./problems/454.4-sum-ii.md)
 - [0464. 我能赢么](./problems/464.can-i-win.md)
@@ -331,7 +334,8 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [0911. 在线选举](./problems/911.online-election.md) 🆕
 - [0912. 排序数组](./problems/912.sort-an-array.md)
 - [0935. 骑士拨号器](./problems/935.knight-dialer.md)
-- [0947. 移除最多的同行或同列石头](./problems/947.most-stones-removed-with-same-row-or-column.md) 🆕
+- [0947. 移除最多的同行或同列石头](./problems/947.most-stones-removed-with-same-row-or-column.md)
+- [0959. 由斜杠划分区域](./problems/959.regions-cut-by-slashes.md) 🆕
 - [0978. 最长湍流子数组](./problems/978.longest-turbulent-subarray.md) 🆕
 - [0987. 二叉树的垂序遍历](./problems/987.vertical-order-traversal-of-a-binary-tree.md) 91
 - [1011. 在 D 天内送达包裹的能力](./problems/1011.capacity-to-ship-packages-within-d-days.md)
@@ -355,8 +359,10 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [1381. 设计一个支持增量操作的栈](./problems/1381.design-a-stack-with-increment-operation.md) 91
 - [1558. 得到目标数组的最少函数调用次数](./problems/1558.minimum-numbers-of-function-calls-to-make-target-array.md) 🆕
 - [1574. 删除最短的子数组使剩余数组有序](./problems/1574.shortest-subarray-to-be-removed-to-make-array-sorted.md) 🆕
-- [1631. 最小体力消耗路径](./problems/1631.path-with-minimum-effort.md) 🆕
+- [1631. 最小体力消耗路径](./problems/1631.path-with-minimum-effort.md)
 - [1658. 将 x 减到 0 的最小操作数](./problems/1658.minimum-operations-to-reduce-x-to-zero.md) 🆕
+- [1697. 检查边长度限制的路径是否存在](./problems/1697.checking-existence-of-edge-length-limited-paths.md) 🆕
+- [1737. 满足三条件之一需改变的最少字符数](./problems/1737.change-minimum-characters-to-satisfy-one-of-three-conditions.md) 🆕
 
 #### 困难难度题目合集
 
@@ -383,6 +389,8 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 3. 总结和记忆解题模板，减少解题压力
 
 以下是我列举的经典题目（带 91 字样的表示出自 **91 天学算法**活动）：
+
+- [LCP 20. 快速公交](./problems/lcp20.meChtZ.md) 🆕
 
 - [0004. 寻找两个正序数组的中位数](./problems/4.median-of-two-sorted-arrays.md)
 - [0023. 合并 K 个升序链表](./problems/23.merge-k-sorted-lists.md)
@@ -411,8 +419,10 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [0483. 最小好进制](./problems/483.smallest-good-base.md) 🆕
 - [0488. 祖玛游戏](./problems/488.zuma-game.md)
 - [0493. 翻转对](./problems/493.reverse-pairs.md)
+- [0679. 24 点游戏](./problems/679.24-game.md) 🆕
 - [0715. Range 模块](./problems/715.range-module.md) 🆕
 - [0768. 最多能完成排序的块 II](./problems/768.max-chunks-to-make-sorted-ii.md) 91
+- [0839. 相似字符串组](./problems/839.similar-string-groups.md) 🆕
 - [0887. 鸡蛋掉落](./problems/887.super-egg-drop.md)
 - [0895. 最大频率栈](./problems/895.maximum-frequency-stack.md)
 - [0975. 奇偶跳](./problems/975.odd-even-jump.md) 🆕
@@ -425,6 +435,7 @@ leetcode 题解，记录自己的 leetcode 解题之路。
 - [1521. 找到最接近目标值的函数值](./problems/1521.find-a-value-of-a-mysterious-function-closest-to-target.md) 🆕
 - [1526. 形成目标数组的子数组最少增加次数](./problems/1526.minimum-number-of-increments-on-subarrays-to-form-a-target-array.md) 🆕
 - [1649. 通过指令创建有序数组](./problems/1649.create-sorted-array-through-instructions.md) 🆕
+- [1671. 得到山形数组的最少删除次数](./problems/1671.minimum-number-of-removals-to-make-mountain-array.md)🆕
 - [1707. 与数组中元素的最大异或值](./problems/5640.maximum-xor-with-an-element-from-array.md) 🆕
 
 ## :trident: &nbsp;anki 卡片
